@@ -16,5 +16,8 @@ func Init() *gin.Engine {
 	// status of a Pixelbyte
 	r.GET("/status", api.GetStatus)
 
+	// Websocket endpoint
+	r.GET("/ws", api.WSEndpoint)
+
 	return r
 }
